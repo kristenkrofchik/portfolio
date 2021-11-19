@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <nav>
+        <header>
             <div className='logo'>
                 <Link to='/'>Kristen Krofchik</Link>
             </div>
@@ -29,7 +29,7 @@ const Header = () => {
                     </Link> 
                 </li>
             </ul>
-        </nav>
+        </header>
     );
 }
 

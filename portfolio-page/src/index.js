@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './fonts/Nanum/NanumMyeongjo-Regular.ttf';
 
 ReactDOM.render(
   <React.StrictMode>
