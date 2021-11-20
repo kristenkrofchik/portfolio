@@ -1,8 +1,14 @@
+@font-face {
+  font-family: 'DMSans';
+  font-style: normal;
+  src: url('./fonts/DMSans/DMSans-Regular.ttf');
+  src: local('DMSans'), url('./fonts/DMSans/DMSans-Regular.ttf') format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'DMSans';
+  color: #000a09;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

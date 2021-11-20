@@ -1,0 +1,43 @@
+.header {
+    background-color: #01312d;
+    width: 100%;
+    display: flex;
+    flex: 0 0 100%;
+    padding: 1rem;
+}
+
+a, .logo {
+    float: left;
+    color: #ECE5F0;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 4px;
+}
+
+a:hover, a:visited {
+    color: #E98A15;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    margin-left:auto;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+
+
