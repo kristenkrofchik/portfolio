@@ -8,7 +8,8 @@
 body {
   margin: 0;
   font-family: 'DMSans';
-  color: #000a09;
+  color: #dadada;
+  background-color: #040711;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

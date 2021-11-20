@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/roger-bradshaw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-body {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin: 0.75rem;
+}
+
+.hero-title {
+    color: #ECE5F0;
+    text-shadow: 1px 0 0 #040711, 0 -1px 0 #040711, 0 1px 0 #040711, -1px 0 0 #040711;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.learn-more-btn {
+    text-align: center;
+}
+
+@media(min-width: 1024px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
