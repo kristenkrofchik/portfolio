@@ -5,7 +5,7 @@
   src: local('DMSans'), url('./fonts/DMSans/DMSans-Regular.ttf') format('truetype');
 }
 
-body {
+html, body, #root {
   margin: 0;
   font-family: 'DMSans';
   color: #dadada;
