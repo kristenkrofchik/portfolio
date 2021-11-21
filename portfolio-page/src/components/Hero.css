@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Staatliches';
+    font-style: normal;
+    src: url('../fonts/Staatliches/Staatliches-Regular.ttf');
+    src: local('Staatliches'), url('../fonts/Staatliches/Staatliches-Regular.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -33,15 +40,15 @@ body {
 }
 
 .hero-title {
+    font-family: 'Staatliches';
     color: #ECE5F0;
     text-shadow: 1px 0 0 #040711, 0 -1px 0 #040711, 0 1px 0 #040711, -1px 0 0 #040711;
     text-align: center;
     font-size: 2rem;
+    white-space: pre-line;
 }
 
-.learn-more-btn {
-    text-align: center;
-}
+
 
 @media(min-width: 1024px) {
     .hero-title {

@@ -4,16 +4,14 @@
 
 button {
   display: block;
-  width: 100%;
+  position: relative;
   line-height: 1.4;
   padding-left: 5px;
   padding-right: 5px;
   white-space: normal;
-  margin-top: 0;
-  margin-bottom: 10px;
-  min-height: 44px;
+  margin: 0 auto;
   border: 1px solid #04070c;
-  background-color: #a6be45;
+  background-color: #78cc52;
   color: #152844;
 }
 
