@@ -6,16 +6,18 @@ button {
   display: block;
   position: relative;
   line-height: 1.4;
-  padding: 8px 14px;
-  border-radius: 15px;
+  padding: 16px 22px;
+  border-radius: 50px;
   white-space: normal;
   margin: 0 auto;
-  border: 1px solid #04070c;
+  border: 2px solid #04070c;
   background-color: #78cc52;
   color: #152844;
   font-style: bold;
+  text-transform: uppercase;
 }
 
 button:hover {
-  background-color: #bece80;
+  background-color: #04070c;
+  color: #78cc52
 }

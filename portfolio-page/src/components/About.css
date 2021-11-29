@@ -1,8 +1,8 @@
 .container {
-    width: 80%;
+    width: 90%;
     display: block;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 .content-section {
@@ -11,13 +11,15 @@
 }
 
 .image-section {
+    padding-top: 90px;
     float: right;
-    width: 40%;
+    width: 35%;
 }
 
 .image-section img {
     width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 
 .content-section .title {

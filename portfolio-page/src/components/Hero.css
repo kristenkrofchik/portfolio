@@ -48,6 +48,10 @@ body {
     white-space: pre-line;
 }
 
+.learn-more-btn button {
+    font-family: 'Staatliches';
+    font-size: 35px;
+}
 
 
 @media(min-width: 1024px) {
