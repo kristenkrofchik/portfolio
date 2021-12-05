@@ -1,3 +1,7 @@
+.about-me-page {
+    min-height: 100%;
+}
+
 .container {
     width: 90%;
     display: block;
@@ -8,18 +12,25 @@
 .content-section {
     float: left;
     width: 55%;
+    margin-bottom: 20px;
 }
 
 .image-section {
     padding-top: 90px;
     float: right;
-    width: 35%;
+    width: 40%;
+    background: url(../images/roger-bradshaw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 20px;
 }
 
 .image-section img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 50%;
+    padding: 60px 15px;
 }
 
 .content-section .title {
@@ -28,12 +39,16 @@
 
 .content-section .content p {
     margin-top: 10px;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 19px;
+    line-height: 1.6;
 }
 
 .content-section .social {
     margin: 40px 40px;
+}
+
+.push {
+    height: 50px;
 }
 
 @media screen and (max-width: 768px) {

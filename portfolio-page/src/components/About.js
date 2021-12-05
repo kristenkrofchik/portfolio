@@ -32,6 +32,7 @@ const About = () => {
                         <img src={profile_photo} alt="Kristen Krofchik, website owner" />
                     </div>
                 </div>
+                <div class="push"></div>
             </div>
         </Layout>
     )
