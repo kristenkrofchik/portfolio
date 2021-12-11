@@ -1,11 +1,17 @@
 import React from 'react';
-import { Box, Grommet } from 'grommet';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Grommet, ResponsiveContext } from 'grommet';
+import Homepage from './components/Homepage';
+import NotFound from './components/NotFound';
+import About from './components/About';
+import Connect from './components/Connect';
+import Projects from './components/Projects';
 
 const theme = {
   global: {
     colors: {
-      
-    }
+      brand: '#00337E',
+    },
     font: {
       family: 'DM Sans',
       size: '18px',
@@ -14,24 +20,20 @@ const theme = {
   },
 };
 
-const AppBar = (props) => (
-  <Box 
-    tag='header'
-    direction='row'
-    align='center'
-    justify='between'
-    background='brand'
-    pad={{ left: 'medium', right: 'small', vertical: 'small' }}
-    elevation='medium'
-    style={{ zIndex: '1' }}
-    {...props}
-  />
-);
-
 function App() {
   return (
     <Grommet theme={theme}>
-      <AppBar>Hello</AppBar>
+        <div>
+          <BrowserRouter>
+            <Switch>
+              <Route exact path='/' component={Homepage} />
+              <Route exact path='/about' component={About} />
+              <Route exact path='/projects' component={Projects} />
+              <Route exact path='/connect' component={Connect} />
+              <Route path='*' component={NotFound} />
+            </Switch>
+          </BrowserRouter>
+        </div>
     </Grommet>
   );
 }
