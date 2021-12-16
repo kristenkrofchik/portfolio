@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Box, Header} from 'grommet';
+import { Box, Nav, Header} from 'grommet';
 
 const NavBar = () => {
     return (
@@ -9,6 +9,8 @@ const NavBar = () => {
                 <div className='logo'>
                         <Link to='/'>Kristen Krofchik</Link>
                 </div>
+            </Box>
+            <Nav direction="row">
                 <ul className="header-nav">
                     <li>
                         <Link to='/'>
@@ -31,7 +33,7 @@ const NavBar = () => {
                         </Link> 
                     </li>
                 </ul>
-            </Box>
+            </Nav>
         </Header>
     );
 };
