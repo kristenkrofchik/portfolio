@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { withStyles } from '@material-ui/core/styles';
+import { Grommet } from 'grommet';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Grommet plain>
+      <App />
+    </Grommet>
   </React.StrictMode>,
   document.getElementById('root')
 );
