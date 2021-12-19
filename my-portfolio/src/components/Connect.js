@@ -6,6 +6,7 @@ const Connect = () => {
     return (
         <>
             <NavBar />
+            <h1>Connect with Me</h1>
             <SiteFooter />
         </>
     )
