@@ -1,38 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Box, Nav, Header} from 'grommet';
+import { Avatar, Box, Nav, Header} from 'grommet';
+import profile_photo from '../images/profile_photo.JPG'
 
 const NavBar = () => {
+    const src = '../images/profile_photo.JPG';
     return (
         <Header pad="medium">
-            <Box direction="row" align="center" gap="small">
-                <div className='logo'>
-                        <Link to='/'>Kristen Krofchik</Link>
-                </div>
+            <Box direction="row" align="center" justify="left" gap="small">
+                <Avatar src={profile_photo} />
             </Box>
             <Nav direction="row">
-                <ul className="header-nav">
-                    <li>
-                        <Link to='/'>
-                            Home
-                        </Link> 
-                    </li>
-                    <li>
-                        <Link to='/about'>
-                            About
-                        </Link> 
-                    </li>
-                    <li>
-                        <Link to='/projects'>
-                            Projects
-                        </Link> 
-                    </li>
-                    <li>
-                        <Link to='/connect'>
-                            Connect
-                        </Link> 
-                    </li>
-                </ul>
+                <Link to='/'>
+                    Home
+                </Link> 
+                <Link to='/about'>
+                    About
+                </Link> 
+                <Link to='/projects'>
+                    Projects
+                </Link> 
+                <Link to='/connect'>
+                    Connect
+                </Link> 
             </Nav>
         </Header>
     );
