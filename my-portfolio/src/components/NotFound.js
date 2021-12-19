@@ -6,9 +6,13 @@ const NotFound = () => {
     return (
         <>
             <NavBar />
+            <p>We can't find the page you are looking for. Please try again.</p>
             <SiteFooter />
         </>
     )
 };
 
 export default NotFound;
+
+
+
