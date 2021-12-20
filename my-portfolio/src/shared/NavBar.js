@@ -4,7 +4,7 @@ import { Box, Nav, Header} from 'grommet';
 
 const NavBar = () => {
     return (
-        <Header pad="medium">
+        <Header pad="medium" responsive="yes">
             <Box direction="row" align="center" justify="left" gap="small">
                 <Link className='link' to='/'>
                     Home
