@@ -8,7 +8,7 @@ const Homepage = () => {
         <>
             <NavBar />
             <Main pad="medium">
-                <Heading level="1" responsive="true" textAlign="center">Hello! I am Kristen Krofchik,<br></br> a Full Stack Developer.</Heading>
+                <Heading level="1" responsive="true" textAlign="center">Hello! I am Kristen Krofchik,<br></br> a Full Stack Software Developer.</Heading>
                 <Box align="center" pad="medium">
                     <Button label="Learn More" href="/about" />
                 </Box>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Grommet, ResponsiveContext } from 'grommet';
+import { Grommet } from 'grommet';
+import './App.css';
 import Homepage from './components/Homepage';
 import NotFound from './components/NotFound';
 import About from './components/About';
