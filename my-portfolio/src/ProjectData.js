@@ -1,5 +1,4 @@
-const ProjectData = {
-    projects: [
+const ProjectData = [
         {
             id: '1',
             name: 'Pirate Chicks Vintage',
@@ -36,8 +35,6 @@ const ProjectData = {
             description: 'A full-stack feedback app made with Python, Flask, Flask WTForms, and the Jinja2 template engine',
             link: 'https://github.com/kristenkrofchik/flask_feedback'
         }
-
-    ]
-};
+];
 
 export default ProjectData;
