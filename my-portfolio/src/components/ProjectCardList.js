@@ -4,9 +4,9 @@ import ProjectCard from './ProjectCard';
 
 const ProjectCardList = () => {
     const { projects } = useContext(ProjectContext);
-    const projectItems = projects.map(project => {
+    const projectItems = projects.map(project => (
         <ProjectCard {...project} key={project.id} />
-    });
+    ));
 
     return (
         <div>
