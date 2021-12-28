@@ -1,8 +1,8 @@
 import React from 'react';
 import NavBar from '../shared/NavBar';
 import SiteFooter from '../shared/SiteFooter';
-import AboutText from './AboutText.js';
-import AboutImage from './AboutImage.js';
+import AboutText from './AboutText';
+import AboutImage from './AboutImage';
 import { Grid } from 'grommet';
 
 const About = () => {
