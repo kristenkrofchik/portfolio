@@ -7,10 +7,10 @@ const ProjectCard = (project) => {
     const size = React.useContext(ResponsiveContext);
 
     return (
-        <Card height='medium' width={size} background='light-1' responsive='yes'>
+        <Card height='medium' width={size} background='light-4' responsive='yes'>
             <CardHeader pad='medium'>{name}</CardHeader>
             <CardBody pad='medium'>{description}</CardBody>
-            <CardFooter pad='medium' background='light-2'>
+            <CardFooter pad='medium' background='light-5'>
                 <Button label="More on GitHub" href={link} />
             </CardFooter>
         </Card>
