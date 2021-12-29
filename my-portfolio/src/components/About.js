@@ -8,10 +8,10 @@ const About = () => {
     return (
         <>
             <NavBar />
-            <Heading level="3" responsive="true" textAlign="left" margin={{ top:'xsmall', left: 'large' }}>About Me</Heading>
+            <Heading level="2" responsive="true" textAlign="left">About Me</Heading>
             <Grid columns={{ count: 2, size: 'auto' }} gap='medium'>
                 <Box>
-                    <Paragraph margin={{ top:'medium', left: 'large' }}>
+                    <Paragraph margin={{ top:'large', left: 'large' }}>
                     I am a software developer eager to learn and grow in the technology industry. I have spent years learning to code in my personal time, and have now completed the Springboard Software Engineering bootcamp to make software development my professional career. I have experience building websites and web applications with JavaScript, React, Node.js, Python, Flask, SQL, and more.
                     </Paragraph>
                     <Paragraph margin={{ top:'small', left: 'large' }}>
@@ -22,7 +22,7 @@ const About = () => {
                     </Paragraph>
                 </Box>
                 <Box>
-                    <Image fit="contain" src={profile_photo} margin={{ top:'medium', left: 'medium', right: 'large' }}/>
+                    <Image fit="contain" src={profile_photo} margin={{ top:'large', left: 'medium', right: 'large', bottom:'medium' }}/>
                 </Box>
             </Grid>
             <SiteFooter />

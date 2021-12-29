@@ -1,12 +1,13 @@
 import React from 'react';
 import NavBar from '../shared/NavBar';
 import SiteFooter from '../shared/SiteFooter';
+import { Heading } from 'grommet';
 
 const Connect = () => {
     return (
         <>
             <NavBar />
-            <h1>Connect with Me</h1>
+            <Heading level="2" responsive="true" textAlign="left">Projects</Heading>
             <SiteFooter />
         </>
     )
