@@ -26,6 +26,9 @@ const theme = {
     text: {
       dark: 'accent-1',
       light: 'neutral-1',
+    },
+    background: {
+      color: 'accent-1',
     }
   },
 };
