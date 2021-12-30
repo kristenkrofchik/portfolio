@@ -19,7 +19,13 @@ const theme = {
       'neutral-1': '#F2F3F7',
     },
     font: {
-      family: 'DM Sans',
+      family: "'DM Sans', Arial, sans-serif",
+      face: `
+        @font-face {
+          font-family: "DMSans";
+          src: url("./fonts/DMSans/DMSans-Regular.ttf") format('ttf');
+        }
+      `,
       size: '18px',
       height: '20px',
     },
@@ -27,9 +33,6 @@ const theme = {
       dark: 'accent-1',
       light: 'neutral-1',
     },
-    background: {
-      color: 'accent-1',
-    }
   },
 };
 

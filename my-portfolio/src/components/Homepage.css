@@ -1,5 +1,17 @@
-.main-image {
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.116)),
-    url('../images/katya-austin-unsplash.jpg') center/cover no-repeat;
-    background-color: white;
+@font-face {
+    font-family: 'Righteous';
+    font-style: normal;
+    src: url('../fonts/Righteous/Righteous-Regular.ttf');
+    src: local('Righteous'), url('../fonts/Righteous/Righteous-Regular.ttf') format('truetype');
+}
+
+.main-container {
+    opacity: 0.8;
+}
+
+.heading {
+    opacity: 1;
+    text-shadow: black 0.2em 0.2em 0.3em;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
 }

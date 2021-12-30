@@ -22,10 +22,10 @@ let year = new Date().getFullYear();
 
 const SiteFooter = () => {
     return (
-        <Footer background="light-4" pad="small" responsive="yes">
+        <Footer background="accent-1" pad="small" responsive="yes">
             <Media />
             <Text textAlign="center" size="xsmall">
-                `© {year} Copyright Kristen Krofchik`
+                © {year} Copyright Kristen Krofchik
             </Text>
         </Footer>
     )

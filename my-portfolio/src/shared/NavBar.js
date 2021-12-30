@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Nav, Header} from 'grommet';
-import './Navbar.css';
+import './NavBar.css';
 
 const NavBar = () => {
     return (
-        <Header pad="medium" responsive="yes" background="brand" color="neutral-1"> 
+        <Header pad="medium" responsive="yes" background="accent-1" color="neutral-1"> 
             <Box direction="row" align="center" justify="left" gap="small">
                 <Link className='link' to='/'>
                     Home
