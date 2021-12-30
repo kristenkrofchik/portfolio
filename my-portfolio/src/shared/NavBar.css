@@ -1,15 +1,3 @@
-@font-face {
-    font-family: 'Righteous';
-    font-style: normal;
-    src: url('../fonts/Righteous/Righteous-Regular.ttf');
-    src: local('Righteous'), url('../fonts/Righteous/Righteous-Regular.ttf') format('truetype');
-}
-
-.link {
-    font-family: 'Righteous', cursive;
-    letter-spacing: 2px;
-}
-
 .link:visited {
     color: #9764FC;
 }

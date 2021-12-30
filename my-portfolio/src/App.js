@@ -17,6 +17,13 @@ const theme = {
       'accent-3': '#9764FC',
       'accent-4': '#FE131D',
       'neutral-1': '#F2F3F7',
+      background: {
+        color: "accent-1"
+      },
+      text: {
+        light: 'accent-1',
+        dark: 'neutral-1',
+      },
     },
     font: {
       family: "'DM Sans', Arial, sans-serif",
@@ -28,10 +35,6 @@ const theme = {
       `,
       size: '18px',
       height: '20px',
-    },
-    text: {
-      dark: 'accent-1',
-      light: 'neutral-1',
     },
   },
 };

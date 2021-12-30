@@ -1,17 +1,7 @@
-@font-face {
-    font-family: 'Righteous';
-    font-style: normal;
-    src: url('../fonts/Righteous/Righteous-Regular.ttf');
-    src: local('Righteous'), url('../fonts/Righteous/Righteous-Regular.ttf') format('truetype');
-}
-
 .main-container {
     opacity: 0.8;
 }
 
-.heading {
-    opacity: 1;
+.home-heading {
     text-shadow: black 0.2em 0.2em 0.3em;
-    font-family: 'Righteous', cursive;
-    letter-spacing: 2px;
 }

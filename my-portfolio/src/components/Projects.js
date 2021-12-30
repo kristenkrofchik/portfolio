@@ -9,7 +9,7 @@ const Projects = () => {
         <>
             <NavBar />
             <Main pad="medium">
-                <Heading level="2" responsive="true" textAlign="left">Projects</Heading>
+                <Heading level="2" responsive="true" textAlign="left" className="heading">Projects</Heading>
                 <ProjectCardList />
             </Main>
             <SiteFooter />

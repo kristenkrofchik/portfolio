@@ -7,7 +7,7 @@ const Connect = () => {
     return (
         <>
             <NavBar />
-            <Heading level="2" responsive="true" textAlign="left">Connect</Heading>
+            <Heading level="2" responsive="true" textAlign="left" className="heading">Connect</Heading>
             <SiteFooter />
         </>
     )
