@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavBar from '../shared/NavBar';
 import SiteFooter from '../shared/SiteFooter';
-import { Heading } from 'grommet';
+import { Box, Button, Form, FormField, Heading, TextArea, TextInput } from 'grommet';
+
+const defaultValue = {
+    name: '',
+    email: '',
+    message: '',
+};
 
 const Connect = () => {
     return (
