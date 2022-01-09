@@ -19,10 +19,10 @@ const Connect = () => {
     };
 
     const handleChange = evt => {
-        const { valueName, value } = evt.target;
+        const { name, value } = evt.target;
         setValue(data => ({
             ...data,
-            [valueName]: value
+            [name]: value
         }));
     };
 
