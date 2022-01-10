@@ -22,8 +22,13 @@ const Connect = () => {
             message: values.message
         };
 
-        emailjs.sendForm('', '', )
-        setValues(defaultValue);
+        emailjs.sendForm('default_service', 'portfolio_contact_form', templateParams,  )
+        setValues(defaultValues)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
 
     const handleChange = evt => {
