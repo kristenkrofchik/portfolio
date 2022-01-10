@@ -22,7 +22,7 @@ const Connect = () => {
             message: values.message
         };
 
-        emailjs.sendForm('default_service', 'portfolio_contact_form', templateParams,  )
+        emailjs.sendForm('default_service', 'portfolio_contact_form', 'k.krofchik@gmail.com')
         setValues(defaultValues)
             .then((result) => {
                 console.log(result.text);
