@@ -2,25 +2,33 @@ import React, { useState } from 'react';
 import NavBar from '../shared/NavBar';
 import SiteFooter from '../shared/SiteFooter';
 import { Box, Button, Form, FormField, Heading, MaskedInput, TextArea, TextInput } from 'grommet';
+import emailjs from '@emailjs/browser';
 
-const defaultValue = {
+const defaultValues = {
     name: '',
     email: '',
     message: '',
 };
 
 const Connect = () => {
-    const [value, setValue] = useState(defaultValue);
+    const [values, setValues] = useState(defaultValues);
 
     const handleSubmit = evt => {
         evt.preventDefault();
 
-        setValue(defaultValue);
+        const templateParams = {
+            from_name: values.name + " (" + values.email + ") ",
+            to_name: "Kristen Krofchik (k.krofchik@gmail.com)",
+            message: values.message
+        };
+
+        emailjs.sendForm('', '', )
+        setValues(defaultValue);
     };
 
     const handleChange = evt => {
         const { name, value } = evt.target;
-        setValue(data => ({
+        setValues(data => ({
             ...data,
             [name]: value
         }));
@@ -32,7 +40,7 @@ const Connect = () => {
             <Heading level="2" responsive="true" textAlign="left" className="heading">Connect</Heading>
             <Box fill align="center" justify="center">
                 <Box width="medium">
-                    <Form value={value} onSubmit={handleSubmit}>
+                    <Form value={values} onSubmit={handleSubmit}>
                         <FormField label="Name" name="name">
                             <TextInput name="name" onChange={handleChange}/>
                         </FormField>
