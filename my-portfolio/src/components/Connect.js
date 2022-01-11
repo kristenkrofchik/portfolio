@@ -17,18 +17,19 @@ const Connect = () => {
         evt.preventDefault();
 
         const templateParams = {
-            from_name: values.name + " (" + values.email + ") ",
-            to_name: "Kristen Krofchik (k.krofchik@gmail.com)",
+            from_name: values.name + ' ' + values.email,
+            to_name: 'k.krofchik@gmail.com',
             message: values.message
-        };
+        }
 
-        emailjs.sendForm('default_service', 'portfolio_contact_form', 'k.krofchik@gmail.com')
-        setValues(defaultValues)
+        emailjs.sendForm('default_service', 'portfolio_contact_form', '#contact-form', 'user_YGMYi0rilDflr9LqE8WLt', templateParams)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
-                console.log(error.text);
+               console.log(error.text);
             });
+        
+        setValues(defaultValues)
     };
 
     const handleChange = evt => {
@@ -45,7 +46,7 @@ const Connect = () => {
             <Heading level="2" responsive="true" textAlign="left" className="heading">Connect</Heading>
             <Box fill align="center" justify="center">
                 <Box width="medium">
-                    <Form value={values} onSubmit={handleSubmit}>
+                    <Form value={values} onSubmit={handleSubmit} id="contact-form">
                         <FormField label="Name" name="name">
                             <TextInput name="name" onChange={handleChange}/>
                         </FormField>
