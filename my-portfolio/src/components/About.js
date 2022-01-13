@@ -20,7 +20,7 @@ const About = () => {
                     <Paragraph margin={{ top:'small', left: 'large' }} color="neutral-1">
                     I graduated magna cum laude and Phi Beta Kappa from Northwestern University with a BA in history. I chose to study history because I enjoyed discovering, analyzing, and communicating the various forces that shaped historical events. The analytical skills I gained as a student have served me well as a software developer.
                     </Paragraph>
-                    <Paragraph>
+                    <Paragraph margin={{ top:'small', left: 'large' }} color="neutral-1">
                     View my resume <a href="https://drive.google.com/file/d/1kJPcjDxJTT5eKYt4f7RecqjvBZQQt3pS/view?usp=sharing">here</a>
                     </Paragraph>
                 </Box>
