@@ -15,8 +15,7 @@ const Connect = () => {
     const [values, setValues] = useState(defaultValues);
     let history = useHistory();
 
-    const handleSubmit = evt => {
-        evt.preventDefault();
+    const handleSubmit = () => {
 
         const templateParams = {
             from_name: values.name + ' ' + values.email,
