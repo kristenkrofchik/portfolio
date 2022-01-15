@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavBar from '../shared/NavBar';
 import SiteFooter from '../shared/SiteFooter';
 import { Box, Button, Form, FormField, Heading, MaskedInput, TextArea, TextInput } from 'grommet';
+import { Redirect } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
 const defaultValues = {
