@@ -3,27 +3,24 @@ import NavBar from '../shared/NavBar';
 import SiteFooter from '../shared/SiteFooter';
 import { Box, Button, Form, FormField, Heading, MaskedInput, TextArea, TextInput } from 'grommet';
 import { useHistory } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 
 const defaultValues = {
     name: '',
-    email: '',
+    sender_email: '',
     message: '',
 };
 
 const Connect = () => {
     const [values, setValues] = useState(defaultValues);
     let history = useHistory();
+    const notify = () => toast('Thank you for your message, I will get back to you soon!');
 
     const handleSubmit = () => {
 
-        const templateParams = {
-            from_name: values.name + ' ' + values.email,
-            to_name: 'k.krofchik@gmail.com',
-            message: values.message
-        }
-
-        emailjs.sendForm('default_service', 'portfolio_contact_form', '#contact-form', 'user_YGMYi0rilDflr9LqE8WLt', templateParams)
+        emailjs.sendForm('default_service', 'portfolio_contact_form', '#contact-form', 'user_YGMYi0rilDflr9LqE8WLt', '#contact-form')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -31,6 +28,7 @@ const Connect = () => {
             });
         
         setValues(defaultValues);
+        notify();
         history.push('/');
     };
 
@@ -52,8 +50,8 @@ const Connect = () => {
                         <FormField label="Name" name="name">
                             <TextInput name="name" onChange={handleChange}/>
                         </FormField>
-                        <FormField label="Email" name="email">
-                            <MaskedInput name="email" onChange={handleChange} 
+                        <FormField label="Email" name="sender_email">
+                            <MaskedInput name="sender_email" onChange={handleChange} 
                             mask={[
                                     { regexp: /^[\w\-_.]+$/, placeholder: 'example' },
                                     { fixed: '@' },
