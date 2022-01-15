@@ -3,7 +3,7 @@ import NavBar from '../shared/NavBar';
 import SiteFooter from '../shared/SiteFooter';
 import { Box, Button, Form, FormField, Heading, MaskedInput, TextArea, TextInput } from 'grommet';
 import { useHistory } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 
@@ -28,8 +28,8 @@ const Connect = () => {
             });
         
         setValues(defaultValues);
-        notify();
         history.push('/');
+        notify();
     };
 
     const handleChange = evt => {

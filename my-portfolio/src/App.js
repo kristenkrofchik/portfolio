@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Grommet } from 'grommet';
+import { ToastContainer } from 'react-toastify';
 import './App.css';
 import Homepage from './components/Homepage';
 import NotFound from './components/NotFound';
@@ -53,6 +54,7 @@ function App() {
             </Switch>
           </BrowserRouter>
         </div>
+        <ToastContainer />
     </Grommet>
   );
 }
