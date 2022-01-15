@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import NavBar from '../shared/NavBar';
 import SiteFooter from '../shared/SiteFooter';
 import { Box, Button, Form, FormField, Heading, MaskedInput, TextArea, TextInput } from 'grommet';
-import { Redirect } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
 const defaultValues = {
@@ -13,6 +13,7 @@ const defaultValues = {
 
 const Connect = () => {
     const [values, setValues] = useState(defaultValues);
+    let history = useHistory();
 
     const handleSubmit = evt => {
         evt.preventDefault();
@@ -30,7 +31,8 @@ const Connect = () => {
                console.log(error.text);
             });
         
-        setValues(defaultValues)
+        setValues(defaultValues);
+        history.push('/');
     };
 
     const handleChange = evt => {
