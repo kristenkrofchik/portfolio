@@ -11,10 +11,10 @@ const About = () => {
                 <NavBar />
                 <Heading level="2" responsive="true" textAlign="left" className="heading" color="neutral-1">About Me</Heading>
                 <Grid rows={{ count: 2, size: 'auto' }} gap='medium' responsive="true"> 
-                    <Box height="medium" width="medium" justify="center">
+                    <Box height="medium" width="medium" align="center">
                         <Image className="profile-image" fit="contain" opacity="strong" src={profile_photo} margin={{ top:'large', left: 'medium', right: 'large', bottom:'medium' }}/>
                     </Box>
-                    <Box justify="center">
+                    <Box justify="center" align="center">
                         <Paragraph margin={{ top:'medium' }} color="neutral-1">
                         I am a full stack software developer passionate about using my technical skills to build a better world. After studying development on my own for several years, I recently completed a rigorous 1+ year software engineering coding bootcamp with Springboard, where I designed, built, tested and launched full stack web applications and APIs with JavaScript, Node.js, React, Python, Flask, PSQL and more. 
                         </Paragraph>

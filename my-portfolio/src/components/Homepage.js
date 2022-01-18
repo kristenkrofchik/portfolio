@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../shared/NavBar';
 import SiteFooter from '../shared/SiteFooter';
+import { Link } from 'react-router-dom';
 import { Box, Button, Heading, Main} from 'grommet';
 import './Homepage.css';
 
@@ -10,9 +11,15 @@ const Homepage = () => {
             <NavBar />
             <div className="main-container">
                 <Main pad="medium">
-                    <Heading className="home-heading" level="1" responsive="true" textAlign="center" color="neutral-1" >Hello! I am Kristen Krofchik,<br></br> a Full Stack Software Developer.</Heading>
+                    <Box align="center">
+                        <Heading className="home-heading" level="1" responsive="true" textAlign="center" color="neutral-1" >Hello!<br></br>I'm Kristen Krofchik,<br></br>a Full Stack Software Developer.</Heading>
+                    </Box>
                     <Box align="center" pad="medium">
-                        <Button label="Learn More" href="/about" />
+                        <Link to='/about'>
+                            <Button>
+                                Learn More
+                            </Button>
+                        </Link>
                     </Box>
                 </Main>
             </div>
