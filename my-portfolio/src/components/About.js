@@ -11,7 +11,7 @@ const About = () => {
                 <NavBar />
                 <Heading level="2" responsive="true" textAlign="left" className="heading" color="neutral-1">About Me</Heading>
                 <Grid rows={{ count: 2, size: 'auto' }} gap='medium' responsive="true"> 
-                    <Box>
+                    <Box height="medium" width="medium">
                         <Image className="profile-image" fit="contain" opacity="medium" src={profile_photo} margin={{ top:'large', left: 'medium', right: 'large', bottom:'medium' }}/>
                     </Box>
                     <Box>
