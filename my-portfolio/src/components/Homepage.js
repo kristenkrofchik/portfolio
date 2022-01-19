@@ -15,8 +15,8 @@ const Homepage = () => {
                         <Heading className="home-heading heading" level="1" responsive="true" textAlign="center" color="neutral-1" >Hello!<br></br>I'm Kristen Krofchik,<br></br>a Full Stack Software Developer.</Heading>
                     </Box>
                     <Box align="center" pad="medium">
-                        <Link to='/about'>
-                            <Button>
+                        <Link to='/about' className="link">
+                            <Button className='button'>
                                 Learn More
                             </Button>
                         </Link>

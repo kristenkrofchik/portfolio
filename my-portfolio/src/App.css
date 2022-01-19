@@ -11,12 +11,22 @@ body {
 
 .link {
     font-family: 'Righteous', cursive;
+    color: #9764FC;
     letter-spacing: 1.5px;
     text-decoration: none;
 }
 
+.link:hover, .button:hover {
+    text-decoration: underline;
+}
+
+.link:visited, .button:visited {
+    color: #6e2dee;
+    text-decoration: none !important;
+}
+
 .heading {
     font-family: 'Righteous', cursive;
-    letter-spacing: 2.5px;
+    letter-spacing: 2.25px;
 }
 

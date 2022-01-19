@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Nav, Header} from 'grommet';
-import './NavBar.css';
 
 const NavBar = () => {
     return (

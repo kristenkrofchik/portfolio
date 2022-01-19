@@ -24,7 +24,7 @@ const About = () => {
                         When I am not coding, I run a vintage e-commerce business with my mother, where I have learned how to balance several roles to create a respected brand and a high-quality experience for my customers. Before that, I worked in the restaurant industry for over a decade. In hospitality, clear communication and constant collaboration are everything! I use these invaluable skills to meaningfully contribute to a team from the start. 
                         </Paragraph>
                         <Paragraph margin={{ top:'small', bottom:'large' }} color="neutral-1">
-                        I would love to work with you! View my resume <a href="https://drive.google.com/file/d/1kJPcjDxJTT5eKYt4f7RecqjvBZQQt3pS/view?usp=sharing">here</a>
+                        I would love to work with you! View my resume <a className="link" href="https://drive.google.com/file/d/1kJPcjDxJTT5eKYt4f7RecqjvBZQQt3pS/view?usp=sharing">here</a>
                         </Paragraph>
                     </Box>
                 </Grid>
