@@ -12,7 +12,7 @@ const Homepage = () => {
             <div className="main-container">
                 <Main pad="medium">
                     <Box align="center">
-                        <Heading className="home-heading" level="1" responsive="true" textAlign="center" color="neutral-1" >Hello!<br></br>I'm Kristen Krofchik,<br></br>a Full Stack Software Developer.</Heading>
+                        <Heading className="home-heading heading" level="1" responsive="true" textAlign="center" color="neutral-1" >Hello!<br></br>I'm Kristen Krofchik,<br></br>a Full Stack Software Developer.</Heading>
                     </Box>
                     <Box align="center" pad="medium">
                         <Link to='/about'>
