@@ -11,7 +11,7 @@ body {
 
 .link {
     font-family: 'Righteous', cursive;
-    color: #9764FC;
+    color: #9460fc;
     letter-spacing: 1.5px;
     text-decoration: none;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .link:visited, .button:visited {
-    color: #6e2dee;
+    color: #b164fa;
     text-decoration: none !important;
 }
 
